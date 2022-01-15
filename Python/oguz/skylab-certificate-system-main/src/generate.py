@@ -1,6 +1,5 @@
 from src import put
 import qrcode
-
 # Generates a qr code
 def qr():
     qr = qrcode.QRCode(
@@ -9,21 +8,10 @@ def qr():
     qr.make()
     qr = qr.make_image().convert('RGB')
     return qr
-
-
-<<<<<<< HEAD
-"""
-=======
-
->>>>>>> 43473d3 (degişikk)
 # Generates the certificate
 def certificate(img):
     put.name()
     put.instructor()
     put.content()
     put.qr(qr)
-<<<<<<< HEAD
-"""
-=======
 
->>>>>>> 43473d3 (degişikk)
