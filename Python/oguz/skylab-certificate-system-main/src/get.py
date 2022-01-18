@@ -9,7 +9,7 @@ def instructor():
     num = int(input("System supports maximum 2 instructor for a certificate. Please enter the number of instructor : "))
     instructors = []
     for i in range(num):
-        instructors.append(input(f" Enter the name of instructor {i+1}"))
+       instructors.append(input(f" Enter the name of instructor {i+1}"))
 
     return ' & '.join(instructors)
 
