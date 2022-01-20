@@ -5,7 +5,7 @@ from src import generate
 
 def content(img,content): #kurs adı
     name = content
-    font = ImageFont.truetype("C:/Windows/Fonts/consolas.ttf", size = 100)
+    font = ImageFont.truetype("arial.ttf", size = 100)
     d = ImageDraw.Draw(img)
     y_pix = 1150
     stp = 850
