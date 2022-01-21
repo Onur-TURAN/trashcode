@@ -3,12 +3,12 @@ import qrcode
 from src import get
 from src import generate
 
-def content(img,content): #kurs adı
+def content(img,content): #kurs adı veya türü
     name = content
     font = ImageFont.truetype("arial.ttf", size = 100)
     d = ImageDraw.Draw(img)
-    y_pix = 1150
-    stp = 850
+    y_pix = 450
+    stp = 1750
     d.text((get.start_pix_di(name,font,stp),y_pix),name, fill=(0,0,0),font = font)
 def qr(img):
     qr = generate.qr()
@@ -16,20 +16,20 @@ def qr(img):
     offset = (2922,2040)
     img.paste(qr,offset)
 
-def instructor(img):
+def instructor(img): #eğitmen isimleri
     text = get.instructor()
-    stp = 2630
+    stp = 973 #x ekseni sağ sol
     font = ImageFont.truetype("arial.ttf", size=65)
     d = ImageDraw.Draw(img)
-    y_pix = 1930
+    y_pix = 1840 #y ekseni yukarı aşağı
     d.text((get.start_pix_di(text, font, stp), y_pix), text, fill=(0, 0, 0), font=font)
 
-def date(img,date):
+def date(img,date): #tarih
     text = date
-    stp = 1500
+    stp = 1770 #x ekseni sağ sol
     font = ImageFont.truetype("arial.ttf", size=65)
     d = ImageDraw.Draw(img)
-    y_pix = 2230
+    y_pix = 2085 #y ekseni yukarı aşağı
     d.text((get.start_pix_di(text, font, stp), y_pix), text, fill=(0, 0, 0), font=font)
 
 def name(img,user):

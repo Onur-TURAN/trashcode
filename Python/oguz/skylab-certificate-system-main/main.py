@@ -32,7 +32,7 @@ for i in tqdm(range(len(data))):
     
 
     #mail content
-    body = (f"Merhaba {user}, SKY LAB'e olan ilgin için teşekkür ederiz. ART LAB etkinliğimize katıldığın için ekte bulunan sertifikayı seninle paylaşıyoruz. SKY DAYS'de görüşmek üzere :)")
+    body = (f"Merhaba {user}, SKY LAB'e olan ilgin için teşekkür ederiz. 1. Dönem Eğitimimizi tamamladığın için ekte bulunan sertifikayı seninle paylaşıyoruz. Türkiyenin En Büyük Siber Güvenlik Zirvesi olan SKY DAYS'de görüşmek üzere :)")
     put.name(img,user)
     img.save("C:/Users/mrtur/Desktop/trashcode/Python/oguz/skylab-certificate-system-main/img_flow/ready2send.png")
     attachment = "C:/Users/mrtur/Desktop/trashcode/Python/oguz/skylab-certificate-system-main/img_flow/ready2send.png"
