@@ -8,12 +8,12 @@ def content(img,content): #kurs adı veya türü
     font = ImageFont.truetype("arial.ttf", size = 100)
     d = ImageDraw.Draw(img)
     y_pix = 450
-    stp = 1750
+    stp = 1650
     d.text((get.start_pix_di(name,font,stp),y_pix),name, fill=(0,0,0),font = font)
 def qr(img):
     qr = generate.qr()
-    qr = qr.resize((250,250), Image.ANTIALIAS)
-    offset = (2922,2040)
+    qr = qr.resize((200,200), Image.ANTIALIAS)
+    offset = (2940,2055)
     img.paste(qr,offset)
 
 def instructor(img): #eğitmen isimleri
@@ -34,8 +34,8 @@ def date(img,date): #tarih
 
 def name(img,user):
     name = user
-    font = ImageFont.truetype("arial.ttf", size = 200)
+    font = ImageFont.truetype("arial.ttf", size = 100)
     d = ImageDraw.Draw(img)
     stp = 2120
-    y_pix = 882
+    y_pix = 981
     d.text((get.start_pix_di(name,font,stp),y_pix),name, fill=(0,0,0,255),font = font)

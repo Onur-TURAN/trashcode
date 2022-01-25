@@ -4,7 +4,7 @@ import qrcode
 def qr():
     qr = qrcode.QRCode(
     error_correction=qrcode.constants.ERROR_CORRECT_H)
-    qr.add_data("https://yildizskylab.com")
+    qr.add_data("https://youtube.com/playlist?list=PLaA2ILkwegBlqfdULzJnDZJSPfWSuVc6a")
     qr.make()
     qr = qr.make_image().convert('RGB')
     return qr
