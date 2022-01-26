@@ -18,7 +18,7 @@ def qr(img):
 
 def instructor(img): #eğitmen isimleri
     text = get.instructor()
-    stp = 973 #x ekseni sağ sol
+    stp = 963 #x ekseni sağ sol
     font = ImageFont.truetype("arial.ttf", size=65)
     d = ImageDraw.Draw(img)
     y_pix = 1840 #y ekseni yukarı aşağı
@@ -36,6 +36,6 @@ def name(img,user):
     name = user
     font = ImageFont.truetype("arial.ttf", size = 100)
     d = ImageDraw.Draw(img)
-    stp = 2120
-    y_pix = 981
+    stp = 2130
+    y_pix = 975
     d.text((get.start_pix_di(name,font,stp),y_pix),name, fill=(0,0,0,255),font = font)
